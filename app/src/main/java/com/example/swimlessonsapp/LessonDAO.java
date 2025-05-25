@@ -69,6 +69,7 @@ public class LessonDAO {
         return database.update(DatabaseHelper.TABLE_LESSONS, values,
                 DatabaseHelper.COLUMN_ID + " = ?", new String[]{String.valueOf(id)});
     }
+
     public List<Lesson> getAllLessons() {
         List<Lesson> lessonList = new ArrayList<>();
         Cursor cursor = database.query(DatabaseHelper.TABLE_LESSONS, null, null, null, null, null, null);

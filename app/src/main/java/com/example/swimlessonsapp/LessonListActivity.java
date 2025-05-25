@@ -2,6 +2,8 @@ package com.example.swimlessonsapp;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
@@ -20,7 +22,7 @@ public class LessonListActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_lesson_list);
 
-//        listViewLessons = findViewById(R.id.listViewLessons);
+        listViewLessons = findViewById(R.id.listViewLessons);
         lessonDAO = new LessonDAO(this);
         lessonDAO.open();
 
