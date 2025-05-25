@@ -62,14 +62,6 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 
-    findViewById(R.id.btnViewLessons).setOnClickListener(new View.OnClickListener() {
-        @Override
-        public void onClick(View v) {
-            Intent intent = new Intent(MainActivity.this, LessonListActivity.class);
-            startActivity(intent);
-        }
-    });
-
     private void showDatePicker() {
         DatePickerDialog datePickerDialog = new DatePickerDialog(this, (view, year, monthOfYear, dayOfMonth) -> {
             selectedDateTime.set(Calendar.YEAR, year);

@@ -20,7 +20,7 @@ public class LessonListActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_lesson_list);
 
-        listViewLessons = findViewById(R.id.listViewLessons);
+//        listViewLessons = findViewById(R.id.listViewLessons);
         lessonDAO = new LessonDAO(this);
         lessonDAO.open();
 
