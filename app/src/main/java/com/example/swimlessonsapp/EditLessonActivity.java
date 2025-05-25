@@ -1,5 +1,7 @@
 package com.example.swimlessonsapp;
 
+import android.app.DatePickerDialog;
+import android.app.TimePickerDialog;
 import android.database.Cursor;
 import android.os.Bundle;
 import android.view.View;
